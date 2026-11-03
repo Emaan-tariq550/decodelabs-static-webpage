@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DecodeLabs Project 1: a static, semantic and accessible webpage built with pure HTML5 and CSS3.">
+  <title>DecodeLabs Frontend Studio | Static Webpage Design</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="logo" href="#home" aria-label="DecodeLabs Frontend Studio, home">
+        <span class="logo__mark" aria-hidden="true">&lt;/&gt;</span>
+        <span class="logo__text">DecodeLabs</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#services">Services</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__inner container">
+        <p class="eyebrow">Internal Engineering Track: Phase I</p>
+        <h1 class="hero__title" id="hero-title">Structure first. Style second. Clarity always.</h1>
+        <p class="hero__text">We design static webpages with semantic integrity: clean markup, disciplined CSS and layouts that present information with absolute clarity.</p>
+        <a class="button button--primary" href="#services">Explore our approach</a>
+      </div>
+    </section>
+
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="services-title">What we build</h2>
+          <p class="section__lead">Four disciplines that turn a blank folder into a page that passes the quality gate.</p>
+        </header>
+
+        <div class="grid">
+   <article class="card">
+  <img class="card__image" src="assets/images/semantic-html.jpg" alt="Laptop screen showing lines of HTML code" width="600" height="400" loading="lazy">
+  <div class="card__body">
+    <h3 class="card__title">Semantic HTML</h3>
+    <p class="card__text">Header, nav, main, article and footer describe content explicitly to browsers and screen readers.</p>
+  </div>
+</article>
+
+<article class="card">
+  <img class="card__image" src="assets/images/css-engineering.jpg" alt="Web design layout being styled on a monitor" width="600" height="400" loading="lazy">
+  <div class="card__body">
+    <h3 class="card__title">CSS Engineering</h3>
+    <p class="card__text">One external stylesheet, no inline styles, reusable BEM components and design tokens.</p>
+  </div>
+</article>
+
+<article class="card">
+  <img class="card__image" src="assets/images/layout-systems.jpg" alt="Website wireframe sketch showing page layout blocks" width="600" height="400" loading="lazy">
+  <div class="card__body">
+    <h3 class="card__title">Layout Systems</h3>
+    <p class="card__text">CSS Grid shapes the page structure while Flexbox aligns the components inside it.</p>
+  </div>
+</article>
+
+<article class="card">
+  <img class="card__image" src="assets/images/quality-gate.jpg" alt="Checklist on a desk representing quality checks" width="600" height="400" loading="lazy">
+  <div class="card__body">
+    <h3 class="card__title">Quality Gate</h3>
+    <p class="card__text">W3C validation, a semantic audit and visual regression checks before anything ships.</p>
+  </div>
+</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tinted" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <figure class="about__figure">
+          <img class="about__image" src="assets/images/about.jpg" alt="Architectural blueprint with measurements and drawings" width="800" height="600" loading="lazy">
+          <figcaption class="about__caption">.....</figcaption>
+        </figure>
+
+        <div class="about__content">
+          <h2 class="section__title" id="about-title">Built like architecture</h2>
+          <p>The frontend is the only part of the system the user sees. Every page starts with a logical sitemap, then moves through the Input, Process and Output model: assets in, CSS engineering, pixel-perfect render out.</p>
+
+          <ul class="principles">
+            <li class="principles__item">
+              <h3 class="principles__title">One h1 per page</h3>
+              <p class="principles__text">Headings are structural keywords, never styling tools.</p>
+            </li>
+            <li class="principles__item">
+              <h3 class="principles__title">Accessible by default</h3>
+              <p class="principles__text">Alt text, 4.5:1 contrast and visible keyboard focus.</p>
+            </li>
+            <li class="principles__item">
+              <h3 class="principles__title">Stable assets</h3>
+              <p class="principles__text">Explicit width and height prevent layout shift.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <a class="logo logo--light" href="#home" aria-label="DecodeLabs Frontend Studio, back to top">
+          <span class="logo__mark" aria-hidden="true">&lt;/&gt;</span>
+          <span class="logo__text">DecodeLabs</span>
+        </a>
+        <p class="site-footer__text">Build it well, for the frontend is the only part of the system the world will ever see.</p>
+      </div>
+
+      <div class="site-footer__block">
+        <h2 class="site-footer__title">Contact</h2>
+        <address class="contact">
+          <p><a class="contact__link" href="mailto:decodelabs.tech@gmail.com">decodelabs.tech@gmail.com</a></p>
+          <p><a class="contact__link" href="tel:+918933006408">+91 89330 06408</a></p>
+          <p>Greater Lucknow, India</p>
+        </address>
+      </div>
+
+      <nav class="site-footer__block" aria-label="Footer navigation">
+        <h2 class="site-footer__title">Explore</h2>
+        <ul class="footer-nav">
+          <li><a class="contact__link" href="#home">Home</a></li>
+          <li><a class="contact__link" href="#services">Services</a></li>
+          <li><a class="contact__link" href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="site-footer__legal container">&copy; 2026 DecodeLabs. Frontend Development, Project 1.</p>
+  </footer>
+</body>
+</html>
